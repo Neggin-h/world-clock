@@ -3,12 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/clock.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock</title>
   </head>
   <body>
-    <h1>World clock</h1>
+    <div class="container">
+      <h1>World clock</h1>
+      <select name="city" id="city">
+        <option value="">Select a city...</option>
+        <option value="current">My location</option>
+        <option value="Europe/London">London</option>
+        <option value="">Florance</option>
+        <option value="">Paric</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="toronto">
+          <div>
+            <h2>Toronto</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="tehran">
+          <div>
+            <h2>Tehran</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
     <footer>
-      This peoject is coded by Neggin Hariri and is opensourced on
+      This peoject is coded by <strong>Neggin Hariri</strong> and is opensourced
+      on
       <a href="https://github.com/Neggin-h/world-clock.git" target="_blank"
         >GitHub</a
       >
