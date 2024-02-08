@@ -1,8 +1,8 @@
 function updateTime() {
   let torontoElement = document.querySelector("#toronto");
   if (torontoElement) {
-    let torontoDateElement = document.querySelector(".date");
-    let torontoTimeElement = document.querySelector(".time");
+    let torontoDateElement = torontoElement.querySelector(".date");
+    let torontoTimeElement = torontoElement.querySelector(".time");
     let torontoTime = moment().tz("America/Toronto");
 
     torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
@@ -13,8 +13,8 @@ function updateTime() {
 
   let tehranElement = document.querySelector("#tehran");
   if (tehranElement) {
-    let tehranDateElement = document.querySelector(".date");
-    let tehranTimeElement = document.querySelector(".time");
+    let tehranDateElement = tehranElement.querySelector(".date");
+    let tehranTimeElement = tehranElement.querySelector(".time");
     let tehranTime = moment().tz("Asia/Tehran");
 
     tehranDateElement.innerHTML = tehranTime.format("MMMM Do YYYY");
